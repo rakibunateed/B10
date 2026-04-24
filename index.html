@@ -13,6 +13,7 @@
                 extend: {
                     colors: {
                         'primary': 'rgba(171, 239, 95, 1)',
+                        'main': 'rgba(171, 239, 95, 0.5)',
                     }
                 }
             }
@@ -26,18 +27,19 @@
         .manrope {
             font-family: "Manrope", sans-serif;
             font-optical-sizing: auto;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body class="manrope">
-    <header>
+    <header class="md:container md:mx-auto">
         <!-- navigation section -->
-        <nav>
+        <nav class="py-10">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <div class="navbar-start ">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -52,23 +54,51 @@
                         </ul>
                     </div>
                     <a class="btn btn-ghost text-xl text-[#212121] text-3xl font-extrabold"><i
-                            class="fa-solid fa-arrow-up rotate-45 bg-[#ABEF5F] mx-auto rounded-[32px] p-[10px]"></i> Rinterio</a>
+                            class="fa-solid fa-arrow-up rotate-45 bg-[#ABEF5F] mx-auto rounded-[32px] px-3 py-2"></i>
+                        Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li class="text-[#494949] text-base font-extrabold"><a>Home</a></li>
+                        <li class="text-[#737373] text-base font-normal"><a>Services</a></li>
+                        <li class="text-[#737373] text-base font-normal"><a>Portfolio</a></li>
+                        <li class="text-[#737373] text-base font-normal"><a>Blogs</a></li>
+                        <li class="text-[#737373] text-base font-normal"><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <button class="btn  bg-primary rounded-3xl border-white">Book Consult <i
-                            class="fa-solid fa-arrow-up rotate-45 bg-black mx-auto rounded-[32px] p-[10px] text-white"></i></button>
+                <div class="navbar-end gap-6">
+                    <i
+                        class="fa-solid fa-bag-shopping text-2xl bg-[#FFFFFF] rounded-[56px] px-3 py-2 drop-shadow-md "></i>
+                    <i
+                        class="fa-solid fa-magnifying-glass text-2xl bg-[#FFFFFF] rounded-[56px] px-3 py-2 drop-shadow-md "></i>
+                    <button
+                        class="btn  bg-primary rounded-3xl border-white text-[#1C1C1C] text-xl font-extrabold hidden md:block">Book
+                        Consult <i
+                            class="fa-solid fa-arrow-up rotate-45 bg-black mx-auto rounded-[32px] px-3 py-2  text-white"></i></button>
                 </div>
             </div>
         </nav>
+
+        <!-- Banner section -->
+        <section class="mb-25">
+            <div class=" lg:flex lg:flex-col justify-center items-center">
+                <img class=" w-[261px] lg:w-[571px] mx-auto" src="assets/banner.png" alt="">
+                <div
+                    class=" text-center lg:flex lg:flex-col justify-center items-center max-w-[335px] lg:max-w-[1170px] mx-auto pt-6 ">
+                    <h3 class="text-[#212121] text-3xl lg:text-6xl font-extrabold">A barn house of this design has a
+                        striking appearance</h3>
+                    <p class="text-[#494949] text-base font-medium py-8">The barn house captivates with its blend of rustic
+                        charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <button class="btn  bg-main rounded-3xl border-white text-[#1C1C1C] text-xl font-bold ">View Details
+                        <i
+                            class="fa-solid fa-arrow-up rotate-45 bg-[#ABEF5F] mx-auto rounded-[32px] px-3 py-2  text-black"></i></button>
+
+
+                </div>
+            </div>
+        </section>
 
     </header>
     <main>
